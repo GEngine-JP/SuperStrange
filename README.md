@@ -13,7 +13,6 @@ StrangeIOC交流群: 137728654
 OSChina Git手机端下载随时跟进项目状态 https://git.oschina.net/appclient 
 
 很高兴我们的开源项目SuperStrange从今天启动了，至于为什么叫做SuperStrange,这个“超级奇怪”的名字，其实我也不知道，就是突nao发dong灵da感kai的创意，猪脚在城市中不断的逃跑白天要躲避警察，晚上要躲避恶魔，无尽的跑酷，最终摆脱顽敌迎来短暂的自由
-
  
 
 一. 本章阐述核心玩法且不动摇
@@ -56,7 +55,23 @@ OSChina Git手机端下载随时跟进项目状态 https://git.oschina.net/appcl
 
 7.请勿轻易删除非本人创建代码片段，有有必要 可全文注释
 
- 
+
+#开发规范细则
+命名规则：Camel-Case(骆驼命名法) http://baike.baidu.com/link?url=y3Syq4B7nXdn5QTN3sanj19fhC9JuQ5RhGSOmE8K_Kn25tHrXvuNotLr_9atUmRuVpfHVsPFOv41CzV1Dp8jga
+枚举规范：使用StrangeIOC非全局事件枚举请尽量使用类内部枚举，即 在类内部定义枚举类
+
+目录结构：如 
+
+		 ------------common
+		 --
+CoreScripts--Main------------controller	 
+		 --
+		 ------------model
+		 --
+		 ------------util
+		 --
+		 ------------view
+
 
 三.非盈利声明
 
