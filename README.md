@@ -56,7 +56,7 @@ OSChina Git手机端下载随时跟进项目状态 https://git.oschina.net/appcl
 7.请勿轻易删除非本人创建代码片段，有有必要 可全文注释
 
 
-#开发规范细则
+###开发规范细则
 命名规则：[Camel-Case(骆驼命名法)](http://baike.baidu.com/link?url=y3Syq4B7nXdn5QTN3sanj19fhC9JuQ5RhGSOmE8K_Kn25tHrXvuNotLr_9atUmRuVpfHVsPFOv41CzV1Dp8jga) 
 
 枚举规范：使用StrangeIOC非全局事件枚举请尽量使用类内部枚举，即 在类内部定义枚举类
