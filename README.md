@@ -39,7 +39,7 @@ OSChina Git手机端下载随时跟进项目状态 https://git.oschina.net/appcl
 
  
 
-二.开发流程
+#二.开发流程
 
 1.加入QQ群，注册OSChina账号
 
