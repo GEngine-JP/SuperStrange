@@ -7,14 +7,16 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{164A416E-423A-6066-5BD1-6E559E316DD4}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>4.6.1f1</UnityVersion>
@@ -66,6 +68,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\coreScripts\fighting\common\ApplicationExit.cs" />
+    <Compile Include="Assets\coreScripts\fighting\common\ApplicationStart.cs" />
+    <Compile Include="Assets\coreScripts\fighting\common\EventCommandBase.cs" />
+    <Compile Include="Assets\coreScripts\fighting\controller\EventCommandBase.cs" />
+    <Compile Include="Assets\coreScripts\fighting\controller\GamePauseCommand.cs" />
+    <Compile Include="Assets\coreScripts\fighting\controller\GameStartCommand.cs" />
+    <Compile Include="Assets\coreScripts\fighting\controller\InitBaseDataCommand.cs" />
+    <Compile Include="Assets\coreScripts\fighting\view\EventMediatorBase.cs" />
+    <Compile Include="Assets\coreScripts\fighting\view\EventViewBase.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlinkforSD.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
@@ -92,6 +103,16 @@
     <Compile Include="Assets\city_lowpoly\Standard Assets\Image Effects (Pro Only)\SepiaToneEffect.cs" />
     <Compile Include="Assets\city_lowpoly\Standard Assets\Image Effects (Pro Only)\TwirlEffect.cs" />
     <Compile Include="Assets\city_lowpoly\Standard Assets\Image Effects (Pro Only)\VortexEffect.cs" />
+    <Compile Include="Assets\coreScripts\commonUnityScripts\EventTriggerListener.cs" />
+    <Compile Include="Assets\coreScripts\commonUnityScripts\GameConfig.cs" />
+    <Compile Include="Assets\coreScripts\fighting\FightingContext.cs" />
+    <Compile Include="Assets\coreScripts\fighting\FightingRoot.cs" />
+    <Compile Include="Assets\coreScripts\fighting\controller\GameOverCommand.cs" />
+    <Compile Include="Assets\coreScripts\fighting\controller\GameResetCommand.cs" />
+    <Compile Include="Assets\coreScripts\fighting\controller\startupSequence\StartFightingCommand.cs" />
+    <Compile Include="Assets\coreScripts\fighting\model\EventDataBase.cs" />
+    <Compile Include="Assets\coreScripts\fighting\util\GameLoop.cs" />
+    <Compile Include="Assets\coreScripts\fighting\util\IGameTimer.cs" />
     <Compile Include="Assets\strange\ReadMe.cs" />
     <Compile Include="Assets\strange\extensions\command\api\CommandExceptionType.cs" />
     <Compile Include="Assets\strange\extensions\command\api\CommandKeys.cs" />
@@ -284,5 +305,6 @@
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
