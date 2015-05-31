@@ -7,16 +7,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{164A416E-423A-6066-5BD1-6E559E316DD4}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <AssemblyName>Assembly-CSharp</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>4.6.1f1</UnityVersion>
@@ -68,10 +66,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\coreScripts\ui\controller\InitBaseDataCommand.cs" />
-    <Compile Include="Assets\coreScripts\ui\controller\Test01Command.cs" />
-    <Compile Include="Assets\coreScripts\ui\view\MenuMediator.cs" />
-    <Compile Include="Assets\coreScripts\ui\view\MenuView.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlinkforSD.cs" />
     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
@@ -121,8 +115,12 @@
     <Compile Include="Assets\coreScripts\ui\common\ApplicationStart.cs" />
     <Compile Include="Assets\coreScripts\ui\common\CommandBase.cs" />
     <Compile Include="Assets\coreScripts\ui\controller\CommandBase.cs" />
+    <Compile Include="Assets\coreScripts\ui\controller\InitBaseDataCommand.cs" />
+    <Compile Include="Assets\coreScripts\ui\controller\Test01Command.cs" />
     <Compile Include="Assets\coreScripts\ui\signal\SignalContainer.cs" />
     <Compile Include="Assets\coreScripts\ui\view\MediatorBase.cs" />
+    <Compile Include="Assets\coreScripts\ui\view\MenuMediator.cs" />
+    <Compile Include="Assets\coreScripts\ui\view\MenuView.cs" />
     <Compile Include="Assets\coreScripts\ui\view\ViewBase.cs" />
     <Compile Include="Assets\strange\ReadMe.cs" />
     <Compile Include="Assets\strange\extensions\command\api\CommandExceptionType.cs" />
@@ -315,6 +313,7 @@
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
     <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
+    <None Include="Assets\开发者手札.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
