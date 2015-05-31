@@ -6,11 +6,12 @@ namespace Assets.coreScripts.fighting.common
 {
     public class EventCommandBase:Command
     {
-        [Inject(ContextKeys.CONTEXT_DISPATCHER)]
-        public IEventDispatcher dispatcher { get; set; }
+        //放弃EventBus使用Signal
+        //[Inject(ContextKeys.CONTEXT_DISPATCHER)]
+        //public IEventDispatcher dispatcher { get; set; }
 
-        [Inject]
-        public IEvent evt { get; set; }
+        //[Inject]
+        //public IEvent evt { get; set; }
 
         public override void Retain()
         {

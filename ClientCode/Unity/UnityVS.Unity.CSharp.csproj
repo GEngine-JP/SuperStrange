@@ -75,6 +75,7 @@
     <Compile Include="Assets\coreScripts\fighting\controller\GamePauseCommand.cs" />
     <Compile Include="Assets\coreScripts\fighting\controller\GameStartCommand.cs" />
     <Compile Include="Assets\coreScripts\fighting\controller\InitBaseDataCommand.cs" />
+    <Compile Include="Assets\coreScripts\fighting\signal\SignalContainer.cs" />
     <Compile Include="Assets\coreScripts\fighting\view\EventMediatorBase.cs" />
     <Compile Include="Assets\coreScripts\fighting\view\EventViewBase.cs" />
     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />

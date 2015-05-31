@@ -9,8 +9,6 @@ namespace Assets.coreScripts.fighting
         void Awake()
         {
             context = new FightingContext(this);
-
-            
         }
     }
 }

@@ -6,11 +6,12 @@ namespace Assets.coreScripts.fighting.controller
 {
     public class EventCommandBase : Command
     {
-        [Inject(ContextKeys.CONTEXT_DISPATCHER)]
-        public IEventDispatcher dispatcher { get; set; }
+        ////IEventDispacher换成Signal实现
+        //[Inject(ContextKeys.CONTEXT_DISPATCHER)]
+        //public IEventDispatcher dispatcher { get; set; }
 
-        [Inject]
-        public IEvent evt { get; set; }
+        //[Inject]
+        //public IEvent evt { get; set; }
 
         /// <summary>
         /// 用于同步Command

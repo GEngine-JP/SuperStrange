@@ -8,8 +8,15 @@ namespace Assets.coreScripts.fighting.util
     {
         private bool update = false;
 
-        [Inject(ContextKeys.CONTEXT_DISPATCHER)]
-        public IEventDispatcher dispatcher { get; set; }
+        //IEventDispacher换成Signal实现
+        //[Inject(ContextKeys.CONTEXT_DISPATCHER)]
+        //public IEventDispatcher dispatcher { get; set; }
+
+        [Inject]
+        public GameFixUpdateSignal fixUpdate { get; set; }
+
+        [Inject]
+        public GameUpdateSignal normalUpdate { get; set; }
 
         #region IGameTimer Members
 
@@ -30,14 +37,28 @@ namespace Assets.coreScripts.fighting.util
         /// </summary>
         void Update() 
         {
-            if (dispatcher != null && update)
-                dispatcher.Dispatch(GameConfig.CoreEvent.GAME_UPDATE);
+            //IEventDispacher换成Signal实现
+            //if (dispatcher != null && update)
+            //    dispatcher.Dispatch(GameConfig.CoreEvent.GAME_UPDATE);
+
+            if (normalUpdate!=null&&update)
+            {
+                Debug.Log("normalUpdate.Dispatch");
+                normalUpdate.Dispatch();
+            }
         }
 
         void FixedUpdate()
         {
-            if (dispatcher != null && update)
-                dispatcher.Dispatch(GameConfig.CoreEvent.GAME_FIXEDDATE);
+            //IEventDispacher换成Signal实现
+            //if (dispatcher != null && update)
+            //    dispatcher.Dispatch(GameConfig.CoreEvent.GAME_FIXEDDATE);
+
+            if (fixUpdate != null && update)
+            {
+                Debug.Log("fixUpdate.Dispatch");
+                fixUpdate.Dispatch();
+            }
         }
     }
 }
