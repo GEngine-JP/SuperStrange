@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Unity.CSharp", "Uni
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Unity.CSharp.Editor", "UnityVS.Unity.CSharp.Editor.csproj", "{202DDE04-A9DD-9848-F932-C7B6A5D1C4BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityVS.Unity.CSharp.Plugins", "UnityVS.Unity.CSharp.Plugins.csproj", "{D526745B-AD5E-90C8-810D-631401465D12}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{202DDE04-A9DD-9848-F932-C7B6A5D1C4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{202DDE04-A9DD-9848-F932-C7B6A5D1C4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{202DDE04-A9DD-9848-F932-C7B6A5D1C4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D526745B-AD5E-90C8-810D-631401465D12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D526745B-AD5E-90C8-810D-631401465D12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D526745B-AD5E-90C8-810D-631401465D12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D526745B-AD5E-90C8-810D-631401465D12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
