@@ -65,3 +65,11 @@ public class GameUpdateSignal : Signal { }
 /// 调用过场
 /// </summary>
 public class LoadingSignal : Signal { }
+/// <summary>
+/// 初始化逻辑数据 
+/// </summary>
+public class InitDataSignal : Signal { }
+/// <summary>
+/// 测试01
+/// </summary>
+public class Test01Signal : Signal<string,int> { }

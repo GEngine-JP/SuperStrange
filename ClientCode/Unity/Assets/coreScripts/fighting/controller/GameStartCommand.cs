@@ -1,7 +1,7 @@
 ﻿
 namespace Assets.coreScripts.fighting.controller
 {
-    public class GameStartCommand:EventCommandBase
+    public class GameStartCommand:CommandBase
     {
         public override void Execute()
         {

@@ -4,7 +4,7 @@ using Assets.coreScripts.fighting.util;
 
 namespace Assets.coreScripts.fighting.controller.startupSequence
 {
-    public class StartFightingCommand :EventCommandBase
+    public class StartFightingCommand :CommandBase
     {
       
     }

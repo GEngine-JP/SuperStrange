@@ -1,5 +1,5 @@
-﻿using Assets.coreScripts.fighting.common;
-using Assets.coreScripts.fighting.controller;
+﻿using Assets.coreScripts.fighting.controller;
+using Assets.coreScripts.fighting.signal;
 using strange.extensions.command.api;
 using strange.extensions.command.impl;
 using strange.extensions.context.api;
@@ -25,7 +25,8 @@ namespace Assets.coreScripts.fighting
         {
             UnityEngine.Debug.Log("Launch...");
             base.Launch();
-            injectionBinder.GetInstance<AppStartSignal>().Dispatch();
+            
+            injectionBinder.GetInstance<InitDataSignal>().Dispatch();
         }
 
         /// <summary>
@@ -73,9 +74,12 @@ namespace Assets.coreScripts.fighting
             commandBinder.Bind<GameOverSignal>().To<GameOverCommand>();
             commandBinder.Bind<GamePauseSignal>().To<GamePauseCommand>();
             commandBinder.Bind<GameResetSignal>().To<GameResetCommand>();
+            commandBinder.Bind<InitDataSignal>().To<InitBaseDataCommand>();
 
             injectionBinder.Bind<GameUpdateSignal>().ToSingleton();
             injectionBinder.Bind<GameFixUpdateSignal>().ToSingleton();
+
+
 
             if (this == Context.firstContext)
             {
@@ -83,8 +87,9 @@ namespace Assets.coreScripts.fighting
                 //commandBinder.Bind(GameConfig.CoreEvent.GAME_EXIT).To<ApplicationExit>().Once();
                 //commandBinder.Bind(ContextEvent.START).To<ApplicationStart>().To<InitBaseDataCommand>().InSequence().Once();
 
-                commandBinder.Bind<AppStartSignal>().To<ApplicationStart>().To<InitBaseDataCommand>().InSequence().Once();
-                commandBinder.Bind<AppExitSignal>().To<ApplicationExit>().Once();
+                //从UIContext中启动
+                //commandBinder.Bind<AppStartSignal>().To<ApplicationStart>().To<InitBaseDataCommand>().InSequence().Once();
+                //commandBinder.Bind<AppExitSignal>().To<ApplicationExit>().Once();
             }
         }
 

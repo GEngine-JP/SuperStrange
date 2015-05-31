@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Assets.coreScripts.fighting.common
+namespace Assets.coreScripts.ui.common
 {
-    public class ApplicationExit:EventCommandBase
+    public class ApplicationExit:CommandBase
     {
         public override void Execute()
         {

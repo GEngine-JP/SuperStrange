@@ -1,7 +1,7 @@
 ﻿
 namespace Assets.coreScripts.fighting.controller
 {
-    public class GamePauseCommand:EventCommandBase
+    public class GamePauseCommand:CommandBase
     {
         public override void Execute()
         {

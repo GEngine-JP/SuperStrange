@@ -2,9 +2,9 @@
 using strange.extensions.context.api;
 using strange.extensions.dispatcher.eventdispatcher.api;
 
-namespace Assets.coreScripts.fighting.controller
+namespace Assets.coreScripts.ui.controller
 {
-    public class EventCommandBase : Command
+    public class CommandBase : Command
     {
         ////IEventDispacher换成Signal实现
         //[Inject(ContextKeys.CONTEXT_DISPATCHER)]

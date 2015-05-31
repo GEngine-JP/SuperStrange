@@ -3,9 +3,9 @@ using strange.extensions.mediation.impl;
 
 namespace Assets.coreScripts.fighting.view
 {
-   public  class EventViewBase:View
+   public  class ViewBase:View
     {
-       [Inject]
-       public IEventDispatcher dispatcher { get; set; }
+       //[Inject]
+       //public IEventDispatcher dispatcher { get; set; }
     }
 }

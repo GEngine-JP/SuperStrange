@@ -2,9 +2,9 @@
 using strange.extensions.context.api;
 using strange.extensions.dispatcher.eventdispatcher.api;
 
-namespace Assets.coreScripts.fighting.common
+namespace Assets.coreScripts.ui.common
 {
-    public class EventCommandBase:Command
+    public class CommandBase:Command
     {
         //放弃EventBus使用Signal
         //[Inject(ContextKeys.CONTEXT_DISPATCHER)]
