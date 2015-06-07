@@ -2,3 +2,4 @@ HelloWord - keyle
 添加了UI上下文 - keyle
 添加了UIMain测试代码 -keyle
 如果没有用过Strangeioc可以参见A-TestCode&Scene/keyle 目录下测试代码 -keyle
+游戏文档正在撰写中 -keyle
