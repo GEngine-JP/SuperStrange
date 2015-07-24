@@ -9,7 +9,8 @@
 
 StrangeIOC交流群: 137728654
 
-3D跑酷开源项目地址: https://git.oschina.net/keyle/SuperStrange#git-readme \n
+3D跑酷开源项目地址: https://git.oschina.net/keyle/SuperStrange#git-readme
+
 2D跑酷开源项目地址：https://git.oschina.net/keyle/BalloonFight
 
 OSChina Git手机端下载随时跟进项目状态 https://git.oschina.net/appclient 
