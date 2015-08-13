@@ -27,7 +27,7 @@ public class AltasTools : Editor
             {
                 string allPath = pngFile.FullName;
                 string assetPath = allPath.Substring(allPath.IndexOf("Assets"));
-                Sprite sprite = Resources.LoadAssetAtPath<Sprite>(assetPath);
+                Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(assetPath);
                 o = new GameObject(sprite.name);
                 o.AddComponent<SpriteRenderer>().sprite = sprite;
                 allPath = spriteDir + "/" + sprite.name + ".prefab";
@@ -59,7 +59,7 @@ public class AltasTools : Editor
             {
                 string allPath = pngFile.FullName;
                 string assetPath = allPath.Substring(allPath.IndexOf("Assets"));
-                assets.Add(Resources.LoadAssetAtPath<Sprite>(assetPath));
+                assets.Add(AssetDatabase.LoadAssetAtPath<Sprite>(assetPath));
             }
             if (BuildPipeline.BuildAssetBundle(null, assets.ToArray(), path, BuildAssetBundleOptions.UncompressedAssetBundle | BuildAssetBundleOptions.CollectDependencies, GetBuildTarget()))
             {
