@@ -4,11 +4,14 @@
 
 本项目自起始至结束所有源码全部开放，但必须保留署名权，所有资源一律网上收集，如果版权纠纷请您联系我，我会将项目中对应资源移除。
 
+
 邮箱: Keyle_xiao@hotmail.com  QQ:351372404
 
 StrangeIOC交流群: 137728654
 
-开源项目地址: https://git.oschina.net/keyle/SuperStrange#git-readme
+3D跑酷开源项目地址: https://git.oschina.net/keyle/SuperStrange#git-readme
+
+2D跑酷开源项目地址：https://git.oschina.net/keyle/BalloonFight
 
 OSChina Git手机端下载随时跟进项目状态 https://git.oschina.net/appclient 
 
